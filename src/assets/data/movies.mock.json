@@ -1,0 +1,81 @@
+{
+    "movies": [
+      {
+        "id": 1,
+        "title": "John Wick",
+        "image": "https://m.media-amazon.com/images/I/71i6JuSZUGL.jpg",
+        "year": 2014,
+        "rating": 7.4,
+        "description": "Un exasesino vuelve a la acción para vengar la muerte de su perro.",
+        "genres": ["Acción", "Thriller"],
+        "featured": true
+      },
+      {
+        "id": 2,
+        "title": "Mad Max: Fury Road",
+        "image": "https://angelusnews.com/wp-content/uploads/2019/09/4uicq6hz9e_Movies_mad_max.jpg",
+        "year": 2015,
+        "rating": 8.1,
+        "description": "Persecución postapocalíptica en el desierto.",
+        "genres": ["Acción", "Ciencia Ficción"],
+        "featured": true
+      },
+      {
+        "id": 3,
+        "title": "The Dark Knight",
+        "image": "https://www.kwikkopy.com.au/wp-content/uploads/2014/11/The-Dark-Knight.jpg",
+        "year": 2008,
+        "rating": 9.0,
+        "description": "Batman se enfrenta al Joker en una batalla por Gotham.",
+        "genres": ["Acción", "Crimen"],
+        "featured": true
+      },
+      {
+        "id": 4,
+        "title": "The Matrix",
+        "image": "https://cdn-images.dzcdn.net/images/cover/7f18600ed057cda07b4bcb4eecb83cb5/0x1900-000000-80-0-0.jpg",
+        "year": 1999,
+        "rating": 8.7,
+        "description": "Un hacker descubre la verdad sobre la realidad simulada.",
+        "genres": ["Acción", "Ciencia Ficción"],
+        "featured": true
+      },
+      {
+        "id": 5,
+        "title": "The Hangover",
+        "image": "https://m.media-amazon.com/images/I/71Q4hVqA+5L._AC_UF1000,1000_QL80_.jpg",
+        "year": 2009,
+        "rating": 7.7,
+        "description": "Caos después de una despedida de soltero en Las Vegas.",
+        "genres": ["Comedia", "Aventura"]
+      },
+      {
+        "id": 6,
+        "title": "The Shawshank Redemption",
+        "image": "https://m.media-amazon.com/images/I/71Q4hVqA+5L._AC_UF1000,1000_QL80_.jpg",
+        "year": 1994,
+        "rating": 9.3,
+        "description": "Historia de esperanza y amistad en prisión.",
+        "genres": ["Drama", "Crimen"],
+        "featured": true
+      },
+      {
+        "id": 7,
+        "title": "Parasite",
+        "image": "https://m.media-amazon.com/images/I/71Q4hVqA+5L._AC_UF1000,1000_QL80_.jpg",
+        "year": 2019,
+        "rating": 8.6,
+        "description": "Sátira social sobre dos familias coreanas.",
+        "genres": ["Drama", "Thriller"]
+      },
+      {
+        "id": 8,
+        "title": "Deadpool",
+        "image": "https://m.media-amazon.com/images/I/71Q4hVqA+5L._AC_UF1000,1000_QL80_.jpg",
+        "year": 2016,
+        "rating": 8.0,
+        "description": "Superhéroe irreverente que rompe la cuarta pared.",
+        "genres": ["Comedia", "Acción"]
+      }
+    ]
+  }

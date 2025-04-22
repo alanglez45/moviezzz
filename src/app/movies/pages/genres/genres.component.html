@@ -1,0 +1,30 @@
+<!--  
+<div class="carousel-container">
+    <h2 class="carousel-title">Acción</h2>
+    <button class="nav-button prev hidden">&#10094;</button>
+    <div class="carousel">
+
+        @for (movie of moviesService.movies(); track movie.title) {
+        
+        <app-movie-card [movie]="movie" />
+        }
+
+
+    </div>
+    <button class="nav-button next">&#10095;</button>
+</div>
+
+<div class="carousel-container">
+    <h2 class="carousel-title">Thriller</h2>
+    <button class="nav-button prev hidden">&#10094;</button>
+    <div class="carousel">
+
+        @for (movie of moviesService.movies(); track movie.title) {
+        <app-movie-card [movie]="movie" />
+        }
+
+    </div>
+    <button class="nav-button next">&#10095;</button>
+</div>
+-->
+<app-carousel />
