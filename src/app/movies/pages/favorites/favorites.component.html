@@ -1,5 +1,17 @@
 <div class="grid">
-    <div>
+
+    @for (movie of moviesService.movies(); track movie.title) {
+    <app-movie-card [movie]="movie" />
+    }
+
+    <!-- <div class="movie-card">
+        <img [src]="movie.image" [alt]="movie.title">
+        <div class="movie-actions">
+            <button class="action-btn watch-btn" (click)="openModal('watch')">Watch movie</button>
+            <button class="action-btn hide-btn" (click)="openModal('hide')">Hide movie</button>
+        </div>
+    </div> -->
+    <!-- <div>
         <img src="https://cdn.shopify.com/s/files/1/1057/4964/products/Home-Alone-Vintage-Movie-Poster-Original_866d9d28_368x.jpg?v=1741732804"
             alt="">
     </div>
@@ -94,5 +106,5 @@
     <div>
         <img src="https://cdn.shopify.com/s/files/1/1057/4964/products/Home-Alone-Vintage-Movie-Poster-Original_866d9d28_368x.jpg?v=1741732804"
             alt="">
-    </div>
+    </div> -->
 </div>

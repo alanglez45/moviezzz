@@ -23,7 +23,7 @@ export class MovieCardComponent {
     if (action === 'watch') {
       this.modalTitle = this.movie.title;
       this.modalMessage = this.movie.description;
-      this.modalConfirmText = 'Watch movie';
+      this.modalConfirmText = 'Play';
     } else {
       this.modalTitle = `¿Ocultar ${this.movie.title}?`;
       this.modalMessage = 'Esta película no aparecerá más en tus recomendaciones.';

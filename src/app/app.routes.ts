@@ -10,18 +10,13 @@ export const routes: Routes = [
     },
     {
         path: 'dashboard',
-        redirectTo: 'dashboard/genres',
+        redirectTo: 'dashboard/movies',
         pathMatch: 'full'
     },
     {
         path: 'dashboard',
         component: DashboardPageComponent,
         children: [
-            {
-                path: 'genres',
-                loadComponent: () => import('./movies/pages/genres/genres.component')
-                // component: GenresComponent
-            },
             {
                 path: 'favorites',
                 loadComponent: () => import('./movies/pages/favorites/favorites.component')
@@ -54,6 +49,6 @@ export const routes: Routes = [
 
     {
         path: '**',
-        redirectTo: 'dashboard/genres'
+        redirectTo: 'dashboard/movies'
     },
 ];
