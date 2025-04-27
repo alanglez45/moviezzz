@@ -26,7 +26,7 @@
             </a>
         </li> -->
         <li>
-            <a [routerLink]="['/dashboard/movies']" routerLinkActive="active">
+            <a [routerLink]="['/dashboard/movies']" routerLinkActive="active" (click)="closeNavbar()">
                 <span class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -48,7 +48,7 @@
 
         <li>
 
-            <a [routerLink]="['/dashboard/favorites']" routerLinkActive="active">
+            <a [routerLink]="['/dashboard/favorites']" routerLinkActive="active" (click)="closeNavbar()">
                 <span class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart">
@@ -63,7 +63,7 @@
 
         <li>
 
-            <a [routerLink]="['/dashboard/series']" routerLinkActive="active">
+            <a [routerLink]="['/dashboard/series']" routerLinkActive="active" (click)="closeNavbar()">
                 <span class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-device-tv">
@@ -78,7 +78,7 @@
 
         <li>
 
-            <a [routerLink]="['/dashboard/settings']" routerLinkActive="active">
+            <a [routerLink]="['/dashboard/settings']" routerLinkActive="active" (click)="closeNavbar()">
                 <span class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-settings">
@@ -92,7 +92,7 @@
         </li>
         <li>
 
-            <a [routerLink]="['/']" class="logoutBtn">
+            <a [routerLink]="['/']" class="logoutBtn" (click)="closeNavbar()">
                 <span class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

@@ -1,8 +1,8 @@
 <div class="movie-card">
     <img [src]="movie.image" [alt]="movie.title">
     <div class="movie-actions">
-        <!-- <button class="action-btn watch-btn" (click)="onWatchClick()">Watch movie</button> -->
-        <button class="action-btn watch-btn" (click)="openModal('watch')">Watch movie</button>
+        <button class="action-btn watch-btn" (click)="watchMovie()">Watch
+            movie</button>
         <button class="action-btn hide-btn" (click)="openModal('hide')">Hide movie</button>
     </div>
 </div>

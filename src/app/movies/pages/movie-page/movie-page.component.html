@@ -1,0 +1,38 @@
+<div class="movie-details">
+    <div class="movie-cover">
+        <!-- <img src="https://artofthemovies.co.uk/cdn/shop/files/IMG_7829_720x@2x.jpg?v=1723206212" alt=""> -->
+        <img [src]="movie.image" [alt]="movie.name">
+    </div>
+    <div class="movie-info">
+        <div class="movie-watch">
+            <h2 class="movie-title">{{movie.title}}</h2>
+            <button class="movie-watch-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-player-play">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 4v16l13 -8z" />
+                </svg>
+                Watch movie
+            </button>
+        </div>
+        <!-- <p class="subtitle">Genres: {{' '}}<span>Action, Thriller</span></p> -->
+        <p class="subtitle">Genres: {{' '}}<span>{{movie.genres}}</span></p>
+        <p class="subtitle">Description:</p>
+        <p class="movie-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non unde esse et, itaque
+            sunt ex nemo delectus quasi recusandae incidunt expedita, possimus illum magni suscipit nostrum voluptas!
+            Voluptas commodi eos ex doloremque debitis pariatur impedit obcaecati repellat iusto! Quas, modi. Expedita
+            magnam, doloribus exercitationem atque laborum tenetur maiores cupiditate dolorum aut voluptas, modi quidem
+            beatae. Ullam libero dolor nobis inventore officia earum dolores eum ipsam iure. Earum blanditiis doloremque
+            aut assumenda magni praesentium dolore saepe nostrum, expedita delectus fugiat optio, officiis sit unde
+            ullam adipisci. Excepturi nihil rem nobis delectus labore expedita pariatur non laudantium blanditiis dicta
+            error explicabo a iusto, adipisci sint consectetur officia magnam reiciendis quas voluptatem fugiat natus
+            fuga. Obcaecati quos delectus, mollitia et nostrum incidunt deserunt at culpa aut dolores est quas odit
+            nobis magnam earum! Perferendis, iure, architecto exercitationem nostrum fugiat quas voluptatum doloremque
+            incidunt officiis totam fugit aperiam? Voluptatibus illum exercitationem corporis sit dolores pariatur vero
+            error quas mollitia animi odio, veritatis laudantium ipsam quo nostrum! Excepturi nisi aliquid iusto maxime
+            impedit in eveniet est a fugiat veniam sapiente et ratione, incidunt unde ab provident, quam ex similique
+            eum! Ex dignissimos, dolorem maiores quidem cumque, magni vel tenetur sed quae asperiores, laudantium fugit
+            delectus.</p>
+    </div>
+</div>

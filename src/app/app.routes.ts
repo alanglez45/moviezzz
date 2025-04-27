@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './movies/pages/login-page/login.component';
 import { DashboardPageComponent } from './movies/pages/dashboard-page/dashboard-page.component';
 import GenresComponent from './movies/pages/genres/genres.component';
+import { MoviePageComponent } from './movies/pages/movie-page/movie-page.component';
 
 export const routes: Routes = [
     {
@@ -40,6 +41,11 @@ export const routes: Routes = [
             {
                 path: '',
                 component: GenresComponent,
+                pathMatch: 'full'
+            },
+            {
+                path: 'movie/:id',
+                component: MoviePageComponent,
                 pathMatch: 'full'
             },
 

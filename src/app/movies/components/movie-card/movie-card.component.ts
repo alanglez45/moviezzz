@@ -1,6 +1,7 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MovieModalComponent } from "../movie-modal/movie-modal.component";
 import { ToastService } from '../../services/toast.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movie-card',
@@ -16,7 +17,7 @@ export class MovieCardComponent {
   modalMessage = '';
   modalConfirmText = '';
 
-  constructor(private toastService: ToastService) { }
+  constructor(private toastService: ToastService, private router: Router) { }
 
 
   openModal(action: 'watch' | 'hide') {
@@ -41,10 +42,13 @@ export class MovieCardComponent {
     if (this.modalConfirmText === 'Play') {
       alert(`Reproduciendo: ${this.movie.title}`);
     } else {
-      // alert(`"${this.movie.title}" ha sido ocultada`);
       this.toastService.show(`${this.movie.title} has been hidden!`);
     }
     this.closeModal();
+  }
+
+  watchMovie() {
+    this.router.navigate(['/dashboard/movie', this.movie.id]);
   }
 
 }

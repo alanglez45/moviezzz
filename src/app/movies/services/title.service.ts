@@ -7,11 +7,11 @@ import { filter } from 'rxjs/operators';
 })
 export class TitleService {
     private titleMap: { [key: string]: string } = {
-        '/dashboard/genres': 'Genres',
         '/dashboard/favorites': 'Favorites',
         '/dashboard/series': 'Series',
         '/dashboard/movies': 'Movies',
-        '/dashboard/settings': 'Settings'
+        '/dashboard/settings': 'Settings',
+        '/dashboard/movie': 'Movie Details'
     };
 
     currentTitle: string = '';
@@ -26,6 +26,6 @@ export class TitleService {
 
     private updateTitle(url: string): void {
         const matchedRoute = Object.keys(this.titleMap).find(key => url.includes(key));
-        this.currentTitle = matchedRoute ? this.titleMap[matchedRoute] : 'Genres';
+        this.currentTitle = matchedRoute ? this.titleMap[matchedRoute] : 'Movies';
     }
 }
