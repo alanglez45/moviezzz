@@ -27,7 +27,7 @@ export class DashboardPageComponent {
   }
 
   shouldShowSearch(): boolean {
-    console.log(this.router.url);
+    // console.log(this.router.url);
     return !this.router.url.endsWith('/dashboard/settings');
   }
 }

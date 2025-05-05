@@ -1,21 +1,32 @@
-import { Component, ElementRef, inject, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { MovieCardComponent } from '../movie-card/movie-card.component';
 import { MoviesService } from '../../services/movies.service';
+import { MoviesJsonService } from '../../services/movies-json.service';
+import { CommonModule } from '@angular/common';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [MovieCardComponent],
+  imports: [MovieCardComponent, CommonModule],
   templateUrl: './carousel.component.html',
 })
 export class CarouselComponent {
-  public moviesService = inject(MoviesService);
+  // public moviesService = inject(MoviesService);
 
   @ViewChild('carousel') carouselRef!: ElementRef<HTMLElement>;
   @ViewChild('prevBtn') prevBtnRef!: ElementRef<HTMLElement>;
   @ViewChild('nextBtn') nextBtnRef!: ElementRef<HTMLElement>;
 
+  movies$: Observable<any[]>;
+  private moviesService = inject(MoviesJsonService);
+
   // constructor(public moviesService: MoviesService) { }
+  constructor() {
+    this.movies$ = this.moviesService.getMovies();
+  }
+
 
   ngAfterViewInit(): void {
     this.setupCarousel();

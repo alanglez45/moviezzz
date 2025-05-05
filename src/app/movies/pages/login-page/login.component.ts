@@ -45,6 +45,4 @@ export class LoginComponent {
       this.router.navigate(['/dashboard/movies']);
     }, 1500);
   }
-
-
 }

@@ -1,11 +1,10 @@
 <div class="movie-details">
     <div class="movie-cover">
-        <!-- <img src="https://artofthemovies.co.uk/cdn/shop/files/IMG_7829_720x@2x.jpg?v=1723206212" alt=""> -->
-        <img [src]="movie.image" [alt]="movie.name">
+        <img [src]="movie?.image" [alt]="movie?.name">
     </div>
     <div class="movie-info">
         <div class="movie-watch">
-            <h2 class="movie-title">{{movie.title}}</h2>
+            <h2 class="movie-title">{{movie?.title}}</h2>
             <button class="movie-watch-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -16,8 +15,7 @@
                 Watch movie
             </button>
         </div>
-        <!-- <p class="subtitle">Genres: {{' '}}<span>Action, Thriller</span></p> -->
-        <p class="subtitle">Genres: {{' '}}<span>{{movie.genres}}</span></p>
+        <p class="subtitle">Genres: {{' '}}<span>{{movie?.genres}}</span></p>
         <p class="subtitle">Description:</p>
         <p class="movie-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non unde esse et, itaque
             sunt ex nemo delectus quasi recusandae incidunt expedita, possimus illum magni suscipit nostrum voluptas!

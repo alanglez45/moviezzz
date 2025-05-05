@@ -1,6 +1,6 @@
 //aservice
 import { Injectable, signal } from '@angular/core';
-import { moviesMock } from '../../../assets/data/movies.mock';
+import { moviesMock } from '../../../data/movies.mock';
 
 @Injectable({
     providedIn: 'root', // Automatically registers the service as a singleton

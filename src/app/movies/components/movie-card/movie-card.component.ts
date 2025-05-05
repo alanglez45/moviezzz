@@ -17,7 +17,8 @@ export class MovieCardComponent {
   modalMessage = '';
   modalConfirmText = '';
 
-  constructor(private toastService: ToastService, private router: Router) { }
+  constructor(private toastService: ToastService, private router: Router) {
+  }
 
 
   openModal(action: 'watch' | 'hide') {
@@ -50,5 +51,7 @@ export class MovieCardComponent {
   watchMovie() {
     this.router.navigate(['/dashboard/movie', this.movie.id]);
   }
+
+
 
 }
