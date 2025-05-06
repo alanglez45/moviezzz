@@ -45,4 +45,7 @@ Empecé a escribir pruebas con Jasmine usando TestBed para componentes y servici
    - Seguir practicando con casos más variados y complejos. Me gustaría enfocarme en entender mejor cómo funciona TestBed, cómo testear correctamente observables y lógica asíncrona, y cómo organizar mejor mis pruebas. También quiero leer más documentación oficial y ver ejemplos prácticos que me ayuden a afianzar lo que estoy aprendiendo.
 
 
+## Testing - Code Coverage 
+
+![code-coverage](./src/assets/screenshots/code-coverage.png)
 
