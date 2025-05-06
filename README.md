@@ -27,26 +27,22 @@ Sigue estos pasos para ejecutar MovieZzz en tu máquina:
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.18.
 
 ## Desarrollo  
-Para adaptar la aplicación a Angular, fue necesario separar la lógica de la interfaz de usuario en componentes independientes, cada uno con responsabilidades claras. Esto permitió:
-
-- Reutilizar secciones comunes de la interfaz (como tarjetas de películas, navegación, etc.).
-
-- Manejar el estado de la aplicación de forma más eficiente.
+Empecé a escribir pruebas con Jasmine usando TestBed para componentes y servicios. Separé mejor la lógica para que fuera más fácil de testear, e hice algunos mocks simples para simular dependencias.
 
 ## Problemas conocidos
-- 🛠 Falta implementar la función de favoritos, series, películas etc.
+- 🛠 No hay cobertura completa de pruebas.
 
 
 ## Retrospectiva
   
    1. ¿Qué hice bien?  
-   - Logré estructurar correctamente la aplicación utilizando Angular 18, siguiendo buenas prácticas para asegurar una presentación clara, modular y bien organizada. El uso de componentes me permitió mantener una arquitectura limpia y escalable.
+   - Empecé a familiarizarme con Jasmine y su uso dentro de Angular. Pude escribir algunas pruebas unitarias básicas y entender cómo se estructuran, lo cual me ayudó a tener una idea más clara de la importancia del testing. También aprendí a usar TestBed, aunque sea en los casos más simples, para probar componentes y servicios.
 
    2. ¿Qué no salió bien?
-   - Algunos aspectos de la migración fueron más complicados de lo esperado. Al no estar completamente familiarizado con Angular, me encontré con desafíos al adaptar ciertas partes de la lógica que antes tenía implementadas de forma más libre o directa. Angular requiere seguir una estructura muy definida (módulos, decoradores, binding, etc.), lo cual fue un cambio importante que me llevó tiempo comprender y aplicar correctamente.
+   - Al ser mi primer acercamiento al testing en Angular, muchas cosas no me resultaron del todo claras. Me costó bastante entender cómo simular servicios, manejar funciones asíncronas, y configurar correctamente los entornos de prueba. Algunas pruebas fallaban y no sabía bien por qué, así que tuve que invertir bastante tiempo buscando documentación y ejemplos.
 
    3. ¿Qué puedo hacer diferente?
-   - Dedicar más tiempo a entender a fondo el ecosistema de Angular, incluyendo el ciclo de vida de los componentes, la inyección de dependencias y la comunicación entre componentes. También quiero reforzar mis conocimientos sobre TypeScript, ya que Angular se apoya fuertemente en este lenguaje. Mantener una rutina de estudio constante y trabajar en proyectos más complejos me ayudará a afianzar estos conceptos.
+   - Seguir practicando con casos más variados y complejos. Me gustaría enfocarme en entender mejor cómo funciona TestBed, cómo testear correctamente observables y lógica asíncrona, y cómo organizar mejor mis pruebas. También quiero leer más documentación oficial y ver ejemplos prácticos que me ayuden a afianzar lo que estoy aprendiendo.
 
 
 
