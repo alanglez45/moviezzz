@@ -3,6 +3,7 @@ import { LoginComponent } from './movies/pages/login-page/login.component';
 import { DashboardPageComponent } from './movies/pages/dashboard-page/dashboard-page.component';
 import GenresComponent from './movies/pages/genres/genres.component';
 import { MoviePageComponent } from './movies/pages/movie-page/movie-page.component';
+import { AuthGuard } from './movies/guards/AuthGuard';
 
 export const routes: Routes = [
     {
@@ -17,6 +18,8 @@ export const routes: Routes = [
     {
         path: 'dashboard',
         component: DashboardPageComponent,
+        // protger la ruta del dashboard con el guard
+        canActivate: [AuthGuard],
         children: [
             {
                 path: 'favorites',

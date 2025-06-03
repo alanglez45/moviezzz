@@ -3,6 +3,7 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
 import { TitleService } from '../../services/title.service';
 import { MobileNavbarComponent } from '../../components/mobile-navbar/mobile-navbar.component';
 import { NgIf } from '@angular/common';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-dashboard-page',
@@ -15,7 +16,7 @@ export class DashboardPageComponent {
 
   mobileNavOpen = false;
 
-  constructor(public router: Router) { }
+  constructor(public router: Router, private authService: AuthService) { }
 
 
   toggleMobileNav() {
@@ -29,5 +30,9 @@ export class DashboardPageComponent {
   shouldShowSearch(): boolean {
     // console.log(this.router.url);
     return !this.router.url.endsWith('/dashboard/settings');
+  }
+
+  logout(): void {
+    this.authService.logout();
   }
 }
